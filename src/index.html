@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Statistics</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/options.css">
+    <link rel="stylesheet" href="./css/defaultData.css">
+    <link rel="stylesheet" href="./css/storeDetails.css">
+    <link rel="stylesheet" href="./css/storesList.css">
+</head>
+<body>
+    <main class="container">
+        <aside class="store-list">
+            <div class="store-list-header__title">
+                <h2>Stores list</h2>
+            </div>
+            <div class="store-list-header__search">
+                <form class="search-form" action="#">
+                    <input class="search-form__input" type="text" placeholder="Search">
+                    <div class="btn-search"></div>
+                    <div class="btn-clear"></div>
+                </form>
+            </div>
+            <ul class="store-list-content">
+            </ul>
+            <footer class="store-list__footer">
+                <button class="btn-create btn-store-create">
+                    <img class="img-create" src="./img/footer-create.png" alt=""> Create
+                </button>
+            </footer>
+        </aside>
+        <section class="default-data">
+            <header class="default-data-header">
+                <h2>Store is not selected</h2>
+            </header>
+            <div class="default-data-wrapper">
+                <div class="default-data-img">
+                    <img class="default-img" src="./img/default-data.png" alt="">
+                </div>
+                <div class="default-data__title">
+                    <h2>The store is not selected</h2>
+                </div>
+    
+                <div class="default-data__subtitle">
+                    <span>Please select the store to proceed</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal modal-create-stores">
+        <div class="modal-dialog">
+            <div class="modal-content modal__user">
+                <div class="modal-title">
+                    <h2>Create new store</h2>
+                </div>
+                <div class="modal-form modal-store-form">
+                    <div class="modal-name">
+                        <div class="modal-name__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Name:</span>
+                        </div>
+                        <div class="modal-name__input modal-place-input">
+                            <input class="modal-inp modal-store-name-inp" type="text" placeholder="Enter name">
+                        </div>
+                    </div>
+
+                    <div class="modal-email modal-indent">
+                        <div class="modal-email__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Email:</span>
+                        </div>
+                        <div class="modal-email__input modal-place-input">
+                            <input class="modal-inp modal-store-email-inp" type="text" placeholder="Enter email">
+                        </div>
+                    </div>
+
+                    <div class="modal-phoneNunber modal-indent">
+                        <div class="modal-phoneNunber__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Phone Number:</span>
+                        </div>
+                        <div class="modal-phoneNunber__input modal-place-input">
+                            <input class="modal-inp modal-store-phoneNunber-inp" type="text" placeholder="Enter phone number">
+                        </div>
+                    </div>
+
+                    <div class="modal-address modal-indent">
+                        <div class="modal-address__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Address:</span>
+                        </div>
+                        <div class="modal-address__input modal-place-input">
+                            <input class="modal-inp modal-store-address-inp" type="text" placeholder="Enter address">
+                        </div>
+                    </div>
+                    <div class="modal-established modal-indent">
+                        <div class="modal-established__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Established:</span>
+                        </div>
+                        <div class="modal-address__input modal-place-input">
+                            <input class="modal-inp modal-store-established-inp" type="date" 
+                            value="2020-07-22" min="2020-01-01" max="2022-12-31"
+                            placeholder="MMM d, y">
+                        </div>
+                    </div>
+                    <div class="modal-floorArea modal-indent">
+                        <div class="modal-floorArea__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>FloorArea:</span>
+                        </div>
+                        <div class="modal-floorArea__input modal-place-input">
+                            <input class="modal-inp modal-store-floorArea-inp" type="text" placeholder="Enter floor area (in sq.m)">
+                        </div>
+                    </div>
+                </div> 
+                <footer class="modal-footer">
+                    <div class="modal-btn-create-wrapper">
+                        <button class="modal-store-btn-create modal-btn-create modal-btn">Create</button>
+                    </div>
+                    <div class="modal-btn-cancel-wrapper">
+                        <button class="modal-store-btn-cancel modal-btn-cancel modal-btn">Cancel</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal-create-details ">
+        <div class="modal-dialog modal-dialog-details">
+            <div class="modal-content modal__user">
+                <div class="modal-title">
+                    <h2>Create new product</h2>
+                </div>
+                <form class="modal-form modal-details-form" action="#">
+                    <div class="modal-name">
+                        <div class="modal-name__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Name:</span>
+                        </div>
+                        <div class="modal-name__input modal-place-input">
+                            <input class="modal-inp modal-detail-name-inp" type="text" placeholder="Enter name">
+                        </div>
+                    </div>
+
+                    <div class="modal-price modal-indent">
+                        <div class="modal-price__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Price:</span>
+                        </div>
+                        <div class="modal-price__input modal-place-input">
+                            <div class="modal-price-wrapper">
+                                <input class="modal-inp modal-detail-price-inp" type="text" placeholder="Enter price">
+                            </div>
+                            <div class="modal-price-currency">
+                                <span>USD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-specs modal-indent">
+                        <div class="modal-specs__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Specs:</span>
+                        </div>
+                        <div class="modal-specs__input modal-place-input">
+                            <textarea class="modal-inp modal-detail-specs-inp" type="text" placeholder="Enter product specs"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-rating modal-indent">
+                        <div class="modal-rating__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Rating:</span>
+                        </div>
+                        <div class="modal-rating__input modal-place-input">
+                            <input class="modal-inp modal-detail-rating-inp" type="text" placeholder="Enter rating 1..5">
+                        </div>
+                    </div>
+                    <div class="modal-supplierInfo modal-indent">
+                        <div class="modal-supplierInfo__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Supplier Info:</span>
+                        </div>
+                        <div class="modal-supplierInfo__input modal-place-input">
+                            <textarea class="modal-inp modal-detail-supplierInfo-inp" type="date" placeholder="Enter supplier info"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-madePlace modal-indent">
+                        <div class="modal-madePlace__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Made in:</span>
+                        </div>
+                        <div class="modal-madePlace__input modal-place-input">
+                            <input class="modal-inp modal-detail-madePlace-inp" type="text" placeholder="Enter origin country">
+                        </div>
+                    </div>
+                    <div class="modal-companyName modal-indent">
+                        <div class="modal-companyName__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Made in:</span>
+                        </div>
+                        <div class="modal-companyName__input modal-place-input">
+                            <input class="modal-inp modal-detail-companyName-inp" type="text" placeholder="Enter manufacturer name">
+                        </div>
+                    </div>
+                    <div class="modal-status modal-indent">
+                        <div class="modal-status__title">
+                            <span class="modal-text"><sup class="modal-symbol">*</sup>Status:</span>
+                        </div>
+                        <div class="modal-status__input modal-place-input">
+                            <select class="modal-inp" name="status" id="modal-status-product">
+                                <option value="OK">OK</option>
+                                <option value="STORAGE">Storage</option>
+                                <option value="OUT_OF_STOCK">Out of Stock</option>
+                            </select>
+                        </div>
+                    </div>
+                </form> 
+                <footer class="modal-footer">
+                    <div class="modal-btn-create-wrapper">
+                        <button class="modal-details-btn-create modal-btn-create modal-btn">Create</button>
+                    </div>
+                    <div class="modal-btn-cancel-wrapper">
+                        <button class="modal-details-btn-cancel modal-btn-cancel modal-btn">Cancel</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal-confirmation modal-confirmation-store">
+        <div class="modal-dialog modal-dialog-confirmation">
+            <div class="modal-content modal__user">
+                <div class="modal-title modal-confirmation-title">
+                    <h2>Confirmation</h2>
+                </div>
+                <div class="modal-confirmation-message">
+                    <span>Are you sure you want to delete this store?</span>
+                </div>
+                <div class="modal-confirmation-footer">
+                    <div class="modal-confirmation-btn-OK-wrapper">
+                        <button class="modal-confirmation__btn-OK modal-store-confirmation__btn-OK">OK</button>
+                    </div>
+                    <div class="modal-confirmation-btn-cancel-wrapper">
+                        <button class="modal-confirmation__btn-cancel modal-store-confirmation__btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-confirmation modal-confirmation-detail">
+        <div class="modal-dialog modal-dialog-confirmation">
+            <div class="modal-content modal__user">
+                <div class="modal-title modal-confirmation-title">
+                    <h2>Confirmation</h2>
+                </div>
+                <div class="modal-confirmation-message">
+                    <span>Are you sure you want to delete this detail?</span>
+                </div>
+                <div class="modal-confirmation-footer">
+                    <div class="modal-confirmation-btn-OK-wrapper">
+                        <button class="modal-confirmation__btn-OK modal-detail-confirmation__btn-OK">OK</button>
+                    </div>
+                    <div class="modal-confirmation-btn-cancel-wrapper">
+                        <button class="modal-confirmation__btn-cancel modal-detail-confirmation__btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/Model.js"></script>
+    <script src="./js/View.js"></script>
+    <script src="./js/Controller.js"></script>
+</body>
+</html>

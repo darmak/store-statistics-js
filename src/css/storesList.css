@@ -1,0 +1,124 @@
+.js-list-item-active {
+  background-color: rgb(178, 215, 243);
+  pointer-events: none;
+}
+
+.store-list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.store-list-header__title {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  font-size: 2.2rem;
+  background-color: #f0f4fa;
+  color: #6b6f75;
+}
+
+.store-list-header__search {
+  padding: 1.5rem;
+  background-color: #f0f4fa;
+  border-bottom: 2px solid #a8b5c4;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-form__input {
+  width: 100%;
+  padding-right: 25%;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.search-form__input:active,
+.search-form__input:hover,
+.search-form__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.btn-search {
+  position: absolute;
+  background: url("../img/ico-search.svg") center no-repeat;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+}
+
+.btn-clear {
+  position: absolute;
+  background: url("../img/imgClear.png") center no-repeat;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15%;
+}
+
+.store-list-content {
+  word-break: break-all;
+  padding-bottom: 50px;
+}
+
+.store-list__item {
+  display: flex;
+  justify-content: space-between;
+  /* height: 65px; */
+  padding: 10px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.store-list-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.store-list-item-info__title {
+  color: #414146;
+  font-size: 15px;
+}
+
+.store-list-item-info__address {
+  color: #8b8b8b;
+  margin-top: 5px;
+}
+
+.store-list-item__square {
+  display: flex;
+  flex-direction: column;
+}
+
+.square__length {
+  color: #414146;
+  font-size: 15px;
+}
+
+.square__unit {
+  color: #8b8b8b;
+}
+
+.btn-search:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .store-list {
+    transform: translate(-300px, 0);
+    transition: 0.4s;
+    width: 0%;
+  }
+}

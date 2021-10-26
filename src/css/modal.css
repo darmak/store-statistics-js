@@ -1,0 +1,181 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  max-width: 450px;
+  margin: 120px auto;
+}
+
+.modal-dialog-details {
+  margin: 50px auto;
+}
+.modal-content {
+  width: 100%;
+  background-color: #fff;
+  color: #979797;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.modal-form {
+  padding: 20px;
+}
+
+.modal-title {
+  border-bottom: 2px solid rgba(218, 218, 218, 0.501);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.modal-text {
+  font-size: 13px;
+}
+.modal-symbol {
+  font-size: 15px;
+  color: rgb(186, 15, 15);
+}
+
+.modal-inp {
+  width: 100%;
+  height: 22px;
+}
+
+.modal-place-input {
+  margin-top: 10px;
+}
+
+.modal-indent {
+  margin-top: 15px;
+}
+
+.modal-inp:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: 2px 2px 2px 2px rgba(111, 111, 111, 0.2);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background: #2c363f;
+}
+
+.modal-btn-create-wrapper {
+  margin-right: 15px;
+}
+
+.modal-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.modal-btn-create {
+  background-color: #4d88bb;
+}
+
+.modal-btn-cancel {
+  background: none;
+  border: 1px solid #445264;
+}
+
+/* DETAILS */
+.modal-price__input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-price-wrapper {
+  width: 100%;
+  padding-right: 15px;
+}
+
+.modal-price-currency {
+  color: #000;
+}
+
+.modal-specs-inp {
+  height: 50px;
+}
+
+.modal-supplierInfo-inp {
+  height: 50px;
+}
+
+#status-product {
+  font-size: 12px;
+}
+
+.modal-create-details {
+  display: none;
+}
+
+/* Confirmation */
+
+/* .modal-confirmation {
+  display: block;
+} */
+
+.modal-confirmation-title {
+  border-bottom: 3px solid rgba(138, 138, 138, 0.501);
+}
+
+.modal-dialog-confirmation {
+  max-width: 350px;
+  margin: 250px auto;
+}
+.modal-confirmation-message {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+.modal-confirmation-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border-top: 2px solid rgba(218, 218, 218, 0.501);
+}
+.modal-confirmation__btn-cancel {
+  margin-left: 10px;
+}
+
+.modal-confirmation__btn-OK {
+  background-color: #568fc7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-confirmation__btn-cancel {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #979797;
+  background: transparent;
+  border: 1px solid #727272aa;
+}
+
+.wrong-data {
+  box-shadow: 0 0px 23px 4px rgba(255, 4, 4, 0.604);
+}
+.wrong-input::after {
+  content: "Incorrect data!";
+  font-size: 1.3rem;
+  color: red;
+}
